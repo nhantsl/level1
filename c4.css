@@ -1,0 +1,82 @@
+body{
+    width: 360px;
+    height: 864px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.card{
+    width: 360px;
+    height: 212px;
+    border-radius: 0px 0px 16px 16px;
+    background-color: #CF3066;
+    position: absolute;
+}
+.a{
+    color: white;
+    font-size: medium;
+    width: 360px;
+    height: 56px;
+    display: flex;
+}
+.b{
+    width: 320px;
+    height: 49px;
+    padding: 0px 20px;
+    font-weight: 0;
+    display: inline-flex;
+    text-align: left;
+    font-size: large;
+    color: white;
+}
+.statusbar{
+    width: 360px;
+    height: 24px;
+}
+.c{
+    position: relative;
+    background-color: white;
+    margin: 173px auto 0 auto;
+    width: 328px;
+    height: 179px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding-top: 10px;
+}
+.d{
+    width: 150px;
+    display: inline-block;
+    
+}
+.e{
+    width: 150px;
+    display: inline-block;
+}
+.btn{
+    border-radius: 10px;
+    width: 250px;
+    background-color: #CF3066;
+    margin: auto;
+    padding: 15px;
+    color: white;
+}
+hr {
+    border: none;
+    width: 200px;
+    border-top: 1px solid #ddd;
+    margin: 15px auto;
+  }
+.vr {
+    width: 1px;
+    height: 50px;
+    background-color: #ddd;
+    display: inline-block;
+}
+.func{
+    margin: 15px;
+    width: 140px;
+    height: 160px;
+    display: inline-block;
+}
