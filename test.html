@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            width: 360px;
+        }
+
+        .nav {
+            width: 360px;
+        }
+
+        .home__header {
+            background-color: #CF3066;
+        }
+
+        .profile__header {
+            width: 360px;
+            height: 100px;
+            background-color: #CF3066;
+            position: relative;
+        }
+
+        .profile__union {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .profile__bank {
+            font-size: small;
+        }
+
+        .carousel-indicators {
+            bottom: -25px;
+        }
+
+        .carousel-indicators .custom-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            border: 1px;
+            opacity: 0.3;
+        }
+
+        .carousel-indicators .custom-indicator.active {
+            opacity: 1;
+            background-color: #fff;
+            width: 12px;
+        }
+
+        .nav__text {
+            font-size: x-small;
+        }
+
+        .nav-link {
+            color: silver;
+        }
+
+        .nav-link.active {
+            color: #CF3066;
+        }
+
+        .wallet__tag--color {
+            color: #CF3066;
+            font-weight: bold;
+        }
+
+        .lh__0 {
+            line-height: 0.5;
+        }
+
+        .people__header {
+            background-color: #CF3066;
+            width: 360px;
+            height: 64px;
+            color: white;
+        }
+
+        .people__p {
+            color: #CF3066;
+        }
+
+        .people__nut {
+            width: 156px;
+            height: 140px;
+        }
+
+        .sub__header {
+            height: 212px;
+            background-color: #CF3066;
+            position: relative;
+        }
+
+        .sub__absoulute {
+            position: absolute;
+            width: 328px;
+            height: 220px;
+            top: 1000px;
+            left: 16px;
+            background-color: white;
+        }
+
+        .sub__absoulute--color {
+            background-color: #CF3066;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="home__header p-3 rounded-bottom-3">
+                <div class="home__header__account">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="./img/Avatar.png" class="h-50" alt="">
+                        </div>
+                        <div class="col-8">
+                            <div class="text-white">
+                                <h6 class="">Nguyễn Thành Dũng</h6>
+                                <p class="fw-light">Số dư: 100.000.000đ</p>
+                            </div>
+                        </div>
+                        <div class="col-1 text-white">
+                            <i class="bi bi-bell fs-3"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__header__banner">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/banner.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/banner.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/banner.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button class="active custom-indicator" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true"
+                                aria-label="Slide 1"></button>
+                            <button class="custom-indicator" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button class="custom-indicator" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home__function mt-2 row text-center">
+                <div class="col-4">
+                    <img src="./img/Mời bạn.svg" alt="">
+                    <p>Mời bạn</p>
+                </div>
+                <div class="col-4">
+                    <img src="./img/Hỗ trợ.svg" alt="">
+                    <p>Hỗ trợ</p>
+                </div>
+                <div class="col-4">
+                    <img src="./img/Rút tiền.svg" alt="">
+                    <p>Rút tiền</p>
+                </div>
+                <div class="col-4">
+                    <img src="./img/Cộng đồng.svg" alt="">
+                    <p>Cộng đồng</p>
+                </div>
+                <div class="col-4">
+                    <img src="./img/Nhiệm vụ.svg" alt="">
+                    <p>Nhiệm vụ</p>
+                </div>
+                <div class="col-4">
+                    <img src="./img/Tài khoản.svg" alt="">
+                    <p>Tài khoản</p>
+                </div>
+            </div>
+            <div class="home__news row text-center">
+                <h5 class="text-start">Tin tức mới</h5>
+                <div class="">
+                    <img src="./img/tintuc.png" alt="">
+                </div>
+                <div class="">
+                    <img src="./img/tintuc.png" alt="">
+                </div>
+                <div class="">
+                    <img src="./img/tintuc.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <img src="./img/Union.png" alt="" class="profile__union">
+            <div class="profile__header">
+                <div class="profile__header--tag d-flex justify-content-between p-3 text-white">
+                    <h5 class="m-auto">Cá nhân</h5>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="profile__header--avatar d-flex justify-content-center">
+                    <img src="./img/Avatar.png" alt="">
+                </div>
+            </div>
+            <div class="profile__account text-center mt-5 pt-3">
+                <h6>
+                    <p>Nguyễn Thành Dũng</p>
+                    <p class="text-success">500.000đ</p>
+                </h6>
+            </div>
+            <div class="profile__bank row p-2">
+                <div class="col d-flex rounded shadow-sm m-2">
+                    <div class="">
+                        <embed src="./img/Tiền chờ duyệt.svg" width="40px">
+                    </div>
+                    <div class="lh-1">
+                        <p class="text-secondary">Tiền chờ duyệt</p>
+                        <p class="text-primary-emphasis fw-semibold">250.000.000đ</p>
+                    </div>
+                </div>
+                <div class="col d-flex rounded shadow-sm m-2">
+                    <div class="">
+                        <embed src="./img/icon.svg" width="40px">
+                    </div>
+                    <div class="lh-1">
+                        <p class="text-secondary">Cần làm lại</p>
+                        <p class="text-danger fw-semibold">350.000.đ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__function ">
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/Setting.svg" alt="" width="40px">
+                    <p class="m-2">Cài đặt tài khoản</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/qunalytk.svg" alt="" width="40px">
+                    <p class="m-2">Quản lý tài khoản</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/qldongtien.svg" alt="" width="40px">
+                    <p class="m-2">Cài đặt dòng tiền</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/lichsudongtien.svg" alt="" width="40px">
+                    <p class="m-2">Lịch sử dòng tiền</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/doisoatdongtien.svg" alt="" width="40px">
+                    <p class="m-2">Đổi soát dòng tiền</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+                <div class="d-flex rounded-3 shadow-sm p-2">
+                    <embed src="./img/nhatkyhaotdong.svg" alt="" width="40px">
+                    <p class="m-2">Nhật ký hoạt động</p>
+                    <div class="ms-auto p-2">
+                        <i class="bi bi-play-fill text-black-50"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">
+            <div class="people__header d-flex pt-2">
+                <i class="bi bi-arrow-left-short fs-2"></i>
+                <p class="mx-auto pt-2">Chi tiết</p>
+            </div>
+            <div class="people__p d-flex justify-content-between p-2">
+                <h4>Like bài viết</h4>
+                <img src="./img/More Square.svg" alt="">
+            </div>
+            <div class="d-flex gap-3 p-2">
+                <div>
+                    <p class="text-secondary">Ngày hết hạn</p>
+                    <p><i class="bi bi-calendar3"></i> 20/09/2020</p>
+                </div>
+                <div class="ms-5">
+                    <p class="text-secondary">Còn lại</p>
+                    <p>321</p>
+                </div>
+            </div>
+            <div class="rounded-3 m-2 p-2 d-flex gap-3 bg-primary-subtle">
+                <div>
+                    <p>Nền tảng</p>
+                    <p>Tiền cộng</p>
+                </div>
+                <div>
+                    <div class="badge bg-primary">Facebook</div><br>
+                    <div class="badge bg-info mt-3">+500</div>
+                </div>
+            </div>
+            <div class="p-2">
+                <h6>Mô tả:</h6>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid
+                    doloribus </p>
+            </div>
+            <h6 class="p-2">Làm việc</h6>
+            <div class="d-flex text-center ">
+                <div class="people__nut bg-light m-1 rounded-3 pt-3">
+                    <img src="./img/Facebook.svg" alt="">
+                    <p>Facebook</p>
+                    <div class="badge bg-warning">Mở app</div>
+                </div>
+                <div class="people__nut bg-light m-1 rounded-3 pt-3">
+                    <img src="./img/chrome.svg" alt="">
+                    <p>Trình duyệt</p>
+                    <div class="badge bg-warning">Mở Trình đuyệt</div>
+                </div>
+            </div>
+            <div class="peope_popup d-flex bg-success-subtle rounded-3 gap-2 mt-5">
+                <div>
+                    <img src="./img/like.svg" alt="" class="m-2">
+                </div>
+                <div class="m">
+                    <p>Hoàn thành công việc</p>
+                    <p>Nhận tiền sau khi thực hiện</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="sub__header rounded-bottom-3 text-white">
+                <div class="d-flex justify-content-between p-3 ">
+                    <i class="bi bi-arrow-left fa-2x"></i>
+                    <p class="rt" style="margin: 0px auto;">Rút tiền </p>
+                </div>
+                <div class="d-flex justify-content-between p-3 ">
+                    <div class="lh__0">
+                        <p>Số dư</p>
+                        <p style="font-weight: 700;">500.000.000 VND</p>
+                    </div>
+                    <div class="ms-auto">
+                        <img src="./img/Avatar1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sub__absoulute shadow-sm rounded-3 p-2">
+                <div class="text-center">
+                    <div class="d-flex justify-content-around pt-2">
+                        <div class="">
+                            <i class="bi bi-circle-fill text-warning"></i> Chờ rút
+                            <h6>100.000đ</h6>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="">
+                            <i class="bi bi-circle-fill text-success"></i> Đã rút</i>
+                            <h6>200.000đ</h6>
+                        </div>
+                    </div>
+                    <div class="">
+                        <hr>
+                        <p class="text-secondary">Thứ 7, Chủ nhật không làm việc nên sẽ rút tiền lâu hơn</p>
+                        <div class="d-grid">
+                            <button class="sub__absoulute--color btn" type="button">Lịch sử rút tiền</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <h4>Chọn phương thức rút</h4>
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/Viettel Pay.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img src="./img/MoMo.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img src="./img/Viettel Pay.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img src="./img/MoMo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-wallet" role="tabpanel" aria-labelledby="nav-wallet-tab">
+            <div class="wallet__tag d-flex justify-content-between p-3">
+                <i class="wallet__tag--color bi bi-wallet-fill"> Kiếm tiền </i>
+                <i class="bi bi-bell-fill text-secondary"></i>
+            </div>
+
+            <div class="wallet__account">
+                <div class="p-2">
+                    <div class="d-flex p-2">
+                        <div class="lh-1">
+                            <p class="fw-semibold">Chào Dũng</p>
+                            <p class="">Chọn tài khoản kiếm tiền</p>
+                        </div>
+                        <div class="ms-auto">
+                            <embed src="./img/Avatar1.png" width="40px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex gap-3">
+                <div class="rounded-5 shadow-sm pt-3 px-3">
+                    <p style="color: #CF3066">Danh sách công việc</p>
+                </div>
+                <div class="rounded-5 shadow-sm pt-3 px-3">
+                    <p style="color: gray;">Lịch sử làm việc</p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="d-flex rounded shadow-sm pt-2 mt-2">
+                    <div class="text-center p-3">
+                        <embed src="./img/like-1.svg" type="" class=""><br>
+                        <p class="badge text-bg-warning text-white">+350đ</p>
+                    </div>
+                    <div class="lh__0 p-3">
+                        <p class="fw-semibold">Like bài viết</p>
+                        <p class="text-secondary">Thành Dũng vừa cập nhật</p>
+                        <div class="pt-2">
+                            <div class="d-flex">
+                                <div class="progress" role="progressbar"
+                                    style="height: 10px; flex-grow: 1;width: 200px;">
+                                    <div class="progress-bar bg-success" style="width: 25%"></div>
+                                </div>
+                                <p class="ms-2">25%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="d-flex rounded shadow-sm pt-2 mt-2">
+                    <div class="text-center p-3">
+                        <embed src="./img/Share.svg" type="" class=""><br>
+                        <p class="badge text-bg-warning text-white">+500đ</p>
+                    </div>
+                    <div class="lh__0 p-3">
+                        <p class="fw-semibold">Share bài viết</p>
+                        <p class="text-secondary">Thành Dũng vừa cập nhật</p>
+                        <div class="pt-2">
+                            <div class="d-flex">
+                                <div class="progress" role="progressbar"
+                                    style="height: 10px; flex-grow: 1;width: 200px;">
+                                    <div class="progress-bar bg-success" style="width: 50%"></div>
+                                </div>
+                                <p class="ms-2">50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <h5>Quảng cáo</h5>
+                <img src="./img/banner1.png" alt="">
+            </div>
+            <div class="pt-4">
+                <div class="d-flex">
+                    <h5>Việc giá thấp</h5>
+                    <p class="ms-auto">Xem thêm</p>
+                </div>
+                <div class="d-flex overflow-auto">
+                    <img src="./img/tintuc1.png" alt="">
+                    <img src="./img/tintuc1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav bg-light fixed-bottom d-flex justify-content-around" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+            role="tab" aria-controls="nav-home" aria-selected="true">
+            <i class="bi bi-house-door-fill"></i><br>
+            <p class="nav__text">Home</p>
+        </button>
+        <button class="nav-link" id="nav-wallet-tab" data-bs-toggle="tab" data-bs-target="#nav-wallet" type="button"
+            role="tab" aria-controls="nav-wallet" aria-selected="false">
+            <i class="bi bi-wallet-fill"></i><br>
+            <p class="nav__text">Kiếm tiền</p>
+        </button>
+        <button class="nav-link" id="nav-people-tab" data-bs-toggle="tab" data-bs-target="#nav-people" type="button"
+            role="tab" aria-controls="nav-people" aria-selected="false">
+            <i class="bi bi-people-fill"></i><br>
+            <p class="nav__text">Cộng đồng</p>
+        </button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">
+            <i class="bi bi-person-fill"></i><br>
+            <p class="nav__text">Cá nhân</p>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
