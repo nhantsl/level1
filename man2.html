@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @media (max-width: 576px) {
+            .profile__header {
+                width: 100%;
+            }
+
+            .nav {
+                flex-direction: row;
+                padding: 10px;
+            }
+
+            .nav-link {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .home__function {
+                padding: 20px;
+            }
+
+            .home__header__account {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
+        body {
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+
+        .nav {
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .profile__header {
+            width: 360px;
+            height: 100px;
+            background-color: #CF3066;
+            position: relative;
+        }
+
+        .profile__union {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .profile__bank {
+            font-size: small;
+        }
+
+        .nav__text {
+            font-size: x-small;
+        }
+
+        .nav-link {
+            color: silver;
+        }
+
+        .nav-link.active {
+            color: #CF3066;
+        }
+
+        .lh__0 {
+            line-height: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/Union.svg" alt="" class="profile__union">
+    <div class="profile__header">
+        <div class="profile__header--tag d-flex justify-content-between p-3 text-white">
+            <h5 class="m-auto">Cá nhân</h5>
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+        <div class="profile__header--avatar d-flex justify-content-center">
+            <img src="./img/Avatar.svg" alt="">
+        </div>
+    </div>
+    <div class="profile__account text-center mt-5 pt-3">
+        <h6>
+            <p>Nguyễn Thành Dũng</p>
+            <p class="text-success">500.000đ</p>
+        </h6>
+    </div>
+    <div class="profile__bank row p-2">
+        <div class="col d-flex rounded shadow-sm m-2">
+            <div class="">
+                <embed src="./img/Tiền chờ duyệt.svg" width="40px">
+            </div>
+            <div class="lh-1">
+                <p class="text-secondary">Tiền chờ duyệt</p>
+                <p class="text-primary-emphasis fw-semibold">250.000.000đ</p>
+            </div>
+        </div>
+        <div class="col d-flex rounded shadow-sm m-2">
+            <div class="">
+                <embed src="./img/icon.svg" width="40px">
+            </div>
+            <div class="lh-1">
+                <p class="text-secondary">Cần làm lại</p>
+                <p class="text-danger fw-semibold">350.000.đ</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile__function ">
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/Setting.svg" alt="" width="40px">
+            <p class="m-2">Cài đặt tài khoản</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/qunalytk.svg" alt="" width="40px">
+            <p class="m-2">Quản lý tài khoản</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/qldongtien.svg" alt="" width="40px">
+            <p class="m-2">Cài đặt dòng tiền</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/lichsudongtien.svg" alt="" width="40px">
+            <p class="m-2">Lịch sử dòng tiền</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/doisoatdongtien.svg" alt="" width="40px">
+            <p class="m-2">Đổi soát dòng tiền</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+        <div class="d-flex rounded-3 shadow-sm p-2">
+            <embed src="./img/nhatkyhaotdong.svg" alt="" width="40px">
+            <p class="m-2">Nhật ký hoạt động</p>
+            <div class="ms-auto p-2">
+                <i class="bi bi-play-fill text-black-50"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav bg-light fixed-bottom d-flex justify-content-around">
+        <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+            role="tab" aria-controls="nav-home" aria-selected="true">
+            <i class="bi bi-house-door-fill"></i><br>
+            <p class="nav__text">Home</p>
+        </button>
+        <button class="nav-link" id="nav-wallet-tab" data-bs-toggle="tab" data-bs-target="#nav-wallet" type="button"
+            role="tab" aria-controls="nav-wallet" aria-selected="false">
+            <i class="bi bi-wallet-fill"></i><br>
+            <p class="nav__text">Kiếm tiền</p>
+        </button>
+        <button class="nav-link" id="nav-people-tab" data-bs-toggle="tab" data-bs-target="#nav-people" type="button"
+            role="tab" aria-controls="nav-people" aria-selected="false">
+            <i class="bi bi-people-fill"></i><br>
+            <p class="nav__text">Cộng đồng</p>
+        </button>
+        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+            <i class="bi bi-person-fill"></i><br>
+            <p class="nav__text">Cá nhân</p>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
