@@ -1,1 +1,1 @@
-https://nhantsl.github.io/level1/man1.html
+https://nhantsl.github.io/level1/home.html

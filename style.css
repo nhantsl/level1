@@ -23,10 +23,6 @@
         justify-content: space-between;
     }
 }
-body{
-    margin: 0 auto;
-    padding: 0;
-}
 nav {
     max-width: 360px;
     margin: 0 auto;
@@ -35,7 +31,7 @@ nav {
 }
 
 
-.home__header {
+header {
     background-color: #CF3066;
     max-width: 360px;
     margin: 0 auto;
@@ -51,14 +47,6 @@ main{
 
 .fs-7 {
     font-size: small;
-}
-
-.nav-link {
-    color: silver;
-}
-
-.nav-link.active {
-    color: #CF3066;
 }
 
 .lh-0 {
@@ -81,4 +69,15 @@ header .carousel-indicators .custom-indicator.active {
     width: 12px;
     height: 8px;
     background-color: #fff;
+}
+
+button a {
+    all: unset;
+    cursor: pointer;
+    color: silver;
+}
+
+/* Khi nút có trạng thái active */
+button.active a {
+    color: #CF3066;
 }
