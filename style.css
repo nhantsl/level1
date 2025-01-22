@@ -1,11 +1,11 @@
 @media (max-width: 576px) {
-
-    .home__header {
+    .home__header, .profile__header {
         width: 100%;
     }
 
     .nav {
         flex-direction: row;
+        padding: 10px;
     }
 
     .nav-link {
@@ -13,9 +13,10 @@
     }
 }
 
+
 @media (min-width: 768px) {
     .home__function {
-        padding: 10px;
+        padding: 20px;
     }
 
     .home__header__account {
@@ -23,34 +24,20 @@
         justify-content: space-between;
     }
 }
+
+
+nav, header, main{
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 nav {
-    max-width: 360px;
-    margin: 0 auto;
     max-height: 56px;
-    padding: 0px 10px;
 }
 
-
-header {
+.home__header {
     background-color: #CF3066;
-    max-width: 360px;
-    margin: 0 auto;
-}
-main{
-    max-width: 360px;
-    margin: 0 auto;
-}
-
-.nav__text {
-    font-size: x-small;
-}
-
-.fs-7 {
-    font-size: small;
-}
-
-.lh-0 {
-    line-height: 0.5;
 }
 
 header .carousel-indicators {
@@ -67,7 +54,6 @@ header .carousel-indicators .custom-indicator {
 header .carousel-indicators .custom-indicator.active {
     opacity: 1;
     width: 12px;
-    height: 8px;
     background-color: #fff;
 }
 
@@ -77,7 +63,54 @@ button a {
     color: silver;
 }
 
-/* Khi nút có trạng thái active */
-button.active a {
+button.active a, .wallet__tag , button.ac{
     color: #CF3066;
+}
+
+.lh-0 {
+    line-height: 0.3;
+}
+.fs-7{
+    font-size: 0.8rem;
+}
+.shadow-0 {
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile__header {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.profile__union {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.profile__header-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.profile__bank{
+    width: 154px;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.profile__function {
+    margin: 7px auto;
+    width: 324px;
+    padding: 10px;
+    display: flex;
 }
