@@ -25,8 +25,11 @@
     }
 }
 
-
-nav, header, main{
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+nav, header, main , .sub__header{
     max-width: 360px;
     margin: 0 auto;
     padding: 0 10px;
@@ -36,7 +39,7 @@ nav {
     max-height: 56px;
 }
 
-.home__header {
+.home__header , button.de{
     background-color: #CF3066;
 }
 
@@ -55,6 +58,11 @@ header .carousel-indicators .custom-indicator.active {
     opacity: 1;
     width: 12px;
     background-color: #fff;
+}
+
+.home__function{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
 }
 
 button a {
@@ -85,7 +93,7 @@ button.active a, .wallet__tag , button.ac{
     overflow: hidden;
 }
 
-.profile__union {
+.profile__header--union {
     position: absolute;
     top: 0;
     left: 50%;
@@ -104,13 +112,67 @@ button.active a, .wallet__tag , button.ac{
 .profile__bank{
     width: 154px;
     height: 75px;
-    margin: 0 auto;
+    margin: 0 7px;
     display: flex;
 }
 
 .profile__function {
     margin: 7px auto;
     width: 324px;
-    padding: 10px;
+    padding: 7px;
     display: flex;
+    align-items: center;
+}
+
+.cash__header {
+    position: relative;
+    height: 210px;
+    width: 360px;
+    background-color: #CF3066;
+    color: white;
+    padding: 20px;
+}
+ .cash__details{
+    width: 328px;
+    height: 179px;
+    background-color: white;
+    color: #000;
+    margin-top: 20px;
+    padding: 9px;
+ }
+
+.cash__content{
+    max-width: 330px;
+    display: block;
+    padding-top: 145px;
+}
+.box{
+    width: 156px;
+    height: 160px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+}
+.square{
+    grid-template-columns: repeat(2, 1fr);
+}
+.people__header {
+    background-color: #CF3066;
+    width: 360px;
+    height: 64px;
+    color: white;
+}
+
+.color{
+    color: #CF3066;
+}
+
+.people__tag{
+    display: flex;
+    width: 328px;
+    height: 88px;
+    border-radius: 16px;
+    margin-top: 10px;
+    padding: 13px;
+    background-color: rgba(146, 146, 234, 0.1);
 }
