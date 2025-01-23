@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wallet__tag d-flex justify-content-between p-2 fs-5">
+            <i class="bi bi-wallet-fill fw-semibold"> Kiếm tiền </i>
+            <i class="bi bi-bell-fill text-secondary"></i>
+        </div>
+    
+        <div class="d-flex p-2">
+            <div>
+                Chào, <span class="fw-semibold"> Dũng!</span>
+                <p>Chọn tài khoản kiếm tiền</p>
+            </div>
+            <div class="ms-auto pt-1">
+                <img src="./img/avatar1.svg" width="48px">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="d-flex justify-content-around">
+                <button class="btn ac shadow-0 rounded-4">
+                    Danh sách công việc
+                </button>
+                <button class="btn text-secondary shadow-0 rounded-4">
+                    Lịch sử làm việc
+                </button>
+        </section>
+
+        <section>
+            <div class="d-flex rounded-4 shadow-0 m-2 mt-3">
+                <div class="text-center pt-3">
+                    <img src="./img/like-1.svg">
+                    <span class="badge text-bg-warning text-white m-2">+350đ</span>
+                </div>
+                <div class="lh-0 pt-3 pe-4">
+                    <span class="m-2">
+                        <p class="fw-semibold">Like bài viết</p>
+                        <p class="text-secondary fs-7">Thành Dũng vừa cập nhật</p>
+                    </span>
+                    <div class="d-flex p-1">
+                        <div class="progress" role="progressbar" style="height: 10px; flex-grow: 1;width: 200px;">
+                            <div class="progress-bar bg-success" style="width: 25%"></div>
+                        </div>
+                        <p class="ms-2 fs-7">25%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex rounded-4 shadow-0 m-2">
+                <div class="text-center pt-3">
+                    <img src="./img/Share.svg">
+                    <span class="badge text-bg-warning text-white m-2">+500đ</span>
+                </div>
+                <div class="lh-0 pt-3 pe-4">
+                    <span class="m-2">
+                        <p class="fw-semibold">Share bài viết</p>
+                        <p class="text-secondary fs-7">Thành Dũng vừa cập nhật</p>
+                    </span>
+                    <div class="d-flex pt-1">
+                        <div class="progress" role="progressbar" style="height: 10px;width: 200px;">
+                            <div class="progress-bar bg-success" style="width: 50%"></div>
+                        </div>
+                        <p class="ms-2 fs-7">50%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="mt-4">
+            <h5>Quảng cáo</h5>
+            <img src="./img/banner1.svg" alt="Quảng cáo banner" class="img-fluid">
+        </section>
+
+        <section>
+            <div class="my-2 mt-4">
+                <div class="d-flex">
+                    <h5>Việc giá thấp</h5>
+                    <p class="ms-auto">Xem thêm</p>
+                </div>
+                <div class="d-flex overflow-auto">
+                    <img src="./img/tintuc1.svg" alt="">
+                    <img src="./img/tintuc1.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="nav bg-light fixed-bottom d-flex justify-content-around">
+        <button class="nav-link">
+            <a href="https://nhantsl.github.io/level1/home.html">
+                <i class="bi bi-house-door-fill fs-5"></i><br>
+                <p class="fs-7">Home</p>
+            </a>
+        </button>
+        <button class="nav-link active">
+            <a href="https://nhantsl.github.io/level1/man3.html">
+                <i class="bi bi-wallet-fill fs-5"></i><br>
+                <p class="fs-7">Kiếm tiền</p>
+            </a>
+        </button>
+        <button class="nav-link">
+            <a href="https://nhantsl.github.io/level1/man4.html">
+                <i class="bi bi-people-fill fs-5"></i><br>
+                <p class="fs-7">Cộng đồng</p>
+            </a>
+        </button>
+        <button class="nav-link">
+            <a href="https://nhantsl.github.io/level1/profile.html">
+                <i class="bi bi-person-fill fs-5"></i><br>
+                <p class="fs-7">Cá nhân</p>
+            </a>
+        </button>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
