@@ -27,20 +27,25 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-  }
+    max-height: 864px;
+}
   
-nav, header, main , .sub__header{
+nav, header {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+main{
     max-width: 360px;
     margin: 0 auto;
-    padding: 0 10px;
+    width: 90%;
+    margin-bottom: 10px;
 }
 
 nav {
-    max-height: 56px;
-}
-
-.home__header , button.de{
-    background-color: #CF3066;
+    max-height: 70px;
 }
 
 header .carousel-indicators {
@@ -71,10 +76,6 @@ button a {
     color: silver;
 }
 
-button.active a, .wallet__tag , button.ac{
-    color: #CF3066;
-}
-
 .lh-0 {
     line-height: 0.3;
 }
@@ -85,28 +86,23 @@ button.active a, .wallet__tag , button.ac{
     box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
 }
 
-
 .profile__header {
     position: relative;
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
 }
 
 .profile__header--union {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     width: 100%;
     height: auto;
-    z-index: 0;
 }
 
-.profile__header-content {
-    position: relative;
-    z-index: 1;
-    padding-top: 20px;
+.profile__header--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
 }
 
 .profile__bank{
@@ -127,15 +123,17 @@ button.active a, .wallet__tag , button.ac{
 .cash__header {
     position: relative;
     height: 210px;
-    width: 360px;
     background-color: #CF3066;
     color: white;
     padding: 20px;
 }
+
  .cash__details{
+    position: absolute;
     width: 328px;
     height: 179px;
     background-color: white;
+    left: 15px;
     color: #000;
     margin-top: 20px;
     padding: 9px;
@@ -156,15 +154,13 @@ button.active a, .wallet__tag , button.ac{
 .square{
     grid-template-columns: repeat(2, 1fr);
 }
-.people__header {
-    background-color: #CF3066;
-    width: 360px;
-    height: 64px;
-    color: white;
+
+.color,button.active a, .wallet__tag , button.ac{
+    color: #CF3066;
 }
 
-.color{
-    color: #CF3066;
+.bg, button.de{
+    background-color: #CF3066;
 }
 
 .people__tag{
@@ -175,4 +171,13 @@ button.active a, .wallet__tag , button.ac{
     margin-top: 10px;
     padding: 13px;
     background-color: rgba(146, 146, 234, 0.1);
+}
+
+.people__popup{
+    position: absolute;
+    top: 700px;
+    padding: 10px;
+    color: #fff;
+    width: 328px;
+    height: 64px;
 }

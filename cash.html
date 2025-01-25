@@ -10,45 +10,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="cash__header rounded-bottom-4">
-            <div class="d-flex">
-                <i class="bi bi-arrow-left-short fs-2"></i>
-                <h5 class="m-auto pe-4">Rút tiền </h5>
+    <header class="cash__header rounded-bottom-4">
+        <div class="d-flex">
+            <i class="bi bi-arrow-left-short fs-2"></i>
+            <h5 class="m-auto pe-4">Rút tiền </h5>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <div class="lh-0">
+                <p>Số dư</p>
+                <h4>500.000.000 VND</h4>
             </div>
-            <div class="d-flex justify-content-between mt-4">
-                <div class="lh-0">
-                    <p>Số dư</p>
-                    <h4>500.000.000 VND</h4>
-                </div>
-                <div class="ms-auto">
-                    <img src="./img/avatar1.svg" alt="" width="48">
-                </div>
+            <div class="ms-auto">
+                <img src="./img/avatar1.svg" alt="" width="48">
             </div>
+        </div>
 
-                <div class="cash__details shadow-0 rounded-4 position-absolute start-50 translate-middle-x">
-                    <div class="text-center">
-                        <div class="d-flex justify-content-around">
-                            <div>
-                                <i class="bi bi-circle-fill text-warning fs-7"></i> Chờ rút
-                                <h6>100.000đ</h6>
-                            </div>
-                            <div class="vr"></div>
-                            <div>
-                                <i class="bi bi-circle-fill text-success fs-7"></i> Đã rút
-                                <h6>200.000đ</h6>
-                            </div>
-                        </div>
+            <div class="cash__details shadow-0 rounded-4">
+                <div class="text-center">
+                    <div class="d-flex justify-content-around">
                         <div>
-                            <hr>
-                            <p class="text-secondary fs-7 fst-italic">Thứ 7, Chủ nhật không làm việc nên sẽ rút tiền lâu hơn</p>
-                            <div class="d-grid">
-                                <button class="btn de text-white fs-7" type="button">Lịch sử rút tiền</button>
-                            </div>
+                            <i class="bi bi-circle-fill text-warning fs-7"></i> Chờ rút
+                            <h6>100.000đ</h6>
+                        </div>
+                        <div class="vr"></div>
+                        <div>
+                            <i class="bi bi-circle-fill text-success fs-7"></i> Đã rút
+                            <h6>200.000đ</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <p class="text-secondary fs-7 fst-italic">Thứ 7, Chủ nhật không làm việc nên sẽ rút tiền lâu hơn</p>
+                        <div class="d-grid">
+                            <button class="btn de text-white fs-7" type="button">Lịch sử rút tiền</button>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
     </header>
     <main class="cash__content">
         <h5 class="fw-bold">Chọn phương thức rút</h5>
