@@ -1,27 +1,32 @@
-@media (max-width: 576px) {
-    .home__header, .profile__header {
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav, header, main {
+        max-width: 720px;
         width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
-    .nav {
-        flex-direction: row;
-        padding: 10px;
-    }
-
-    .nav-link {
-        font-size: 0.8rem;
-    }
 }
 
-
-@media (min-width: 768px) {
-    .home__function {
-        padding: 20px;
+@media (min-width: 1025px) {
+    nav, header, main {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
-    .home__header__account {
-        display: flex;
-        justify-content: space-between;
+    nav {
+        max-height: 100px;
+    }
+
+    main {
+        margin-bottom: 20px;
+    }
+
+    .people__popup{
+        max-width: 200px;
+        width: 90%;
     }
 }
 
@@ -31,17 +36,16 @@ body {
 }
   
 nav, header {
-    max-width: 360px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
 main{
-    max-width: 360px;
     margin: 0 auto;
     width: 90%;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 nav {
@@ -88,28 +92,32 @@ button a {
 
 .profile__header {
     position: relative;
+    height: 100px;
+    background-color: #CF3066;
 }
 
 .profile__header--union {
     position: relative;
-    width: 100%;
     height: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .profile__header--content {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 .profile__bank{
-    width: 154px;
+    width: 60%;
     height: 75px;
-    margin: 0 7px;
+    margin: 0 5px;
     display: flex;
+    padding: 5px;
 }
 
 .profile__function {
@@ -130,13 +138,14 @@ button a {
 
  .cash__details{
     position: absolute;
-    width: 328px;
     height: 179px;
     background-color: white;
-    left: 15px;
     color: #000;
-    margin-top: 20px;
     padding: 9px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
  }
 
 .cash__content{
@@ -144,6 +153,7 @@ button a {
     display: block;
     padding-top: 145px;
 }
+
 .box{
     width: 156px;
     height: 160px;
@@ -152,6 +162,9 @@ button a {
     border-radius: 16px;
 }
 .square{
+    margin: 0 auto;
+    max-width: 330px;
+    display: block;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -165,7 +178,6 @@ button a {
 
 .people__tag{
     display: flex;
-    width: 328px;
     height: 88px;
     border-radius: 16px;
     margin-top: 10px;
@@ -175,9 +187,11 @@ button a {
 
 .people__popup{
     position: absolute;
-    top: 700px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px;
     color: #fff;
-    width: 328px;
     height: 64px;
+    width: 90%;
 }
