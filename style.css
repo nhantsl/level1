@@ -114,16 +114,23 @@ button a {
     height: 75px;
     display: flex;
     padding: 5px;
-    width: 154px;
+    width: 46%;
     align-items: center;
 }
 
 .profile__function {
     margin: 7px auto;
-    width: 324px;
+    width: 95%;
     padding: 7px;
     display: flex;
     align-items: center;
+}
+
+.people__header {
+    height: 80px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
 }
 
 .cash__header {
@@ -178,9 +185,10 @@ button a {
     display: flex;
     height: 88px;
     border-radius: 16px;
-    margin-top: 10px;
+    margin: 10px auto;
     padding: 13px;
     background-color: rgba(146, 146, 234, 0.1);
+    width: 100%;
 }
 
 .people__popup{
