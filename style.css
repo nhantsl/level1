@@ -35,16 +35,14 @@ body {
     max-height: 864px;
 }
   
-nav, header {
+nav, header, main {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
 main{
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 10px;
+    padding-inline: 5px;
 }
 
 nav {
@@ -112,11 +110,12 @@ button a {
 }
 
 .profile__bank{
-    width: 60%;
+    margin: 0 7px;
     height: 75px;
-    margin: 0 5px;
     display: flex;
     padding: 5px;
+    width: 154px;
+    align-items: center;
 }
 
 .profile__function {
