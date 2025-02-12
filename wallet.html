@@ -13,119 +13,108 @@
 
 <body>
     <header>
-        <div class="wallet__tag d-flex justify-content-between p-2 fs-5">
-            <i class="bi bi-wallet-fill fw-semibold"> Kiếm tiền </i>
-            <i class="bi bi-bell-fill text-secondary"></i>
-        </div>
-    
-        <div class="d-flex p-2">
-            <div>
-                Chào, <span class="fw-semibold"> Dũng!</span>
-                <p>Chọn tài khoản kiếm tiền</p>
+        <section class="container">
+            <div class="wallet__tag d-flex justify-content-between fs-5">
+                <i class="bi bi-wallet-fill fw-semibold"> Kiếm tiền </i>
+                <i class="bi bi-bell-fill text-secondary"></i>
             </div>
-            <div class="ms-auto pt-1">
-                <img src="./img/avatar1.svg" width="48px">
-            </div>
-        </div>
+
+            <div class="row mt-3">
+                <div class="col-8">
+                    Chào, <b>Dũng!</b>
+                    <p>Chọn tài khoản kiếm tiền</p>
+                </div>
+                <div class="col-4 text-end">
+                    <img src="./img/avatar1.svg" class="img-fluid" width="48">
+                </div>
+            </div>            
+        </section>
     </header>
-    
+
     <main>
-        <section class="d-flex justify-content-around">
-                <button class="btn ac shadow-0 rounded-4 w-75 ms-2">
-                    Danh sách công việc
-                </button>
-                <button class="btn text-secondary shadow-0 rounded-4 w-50 ms-2">
-                    Lịch sử làm việc
-                </button>
+        <section class="container">
+            <div class="btn-group d-flex gap-3">
+                <p class="btn color shadow-0 rounded-pill">Danh sách công việc</p>
+                <p class="btn text-secondary shadow-0 rounded-pill">Lịch sử làm việc</p>
+            </div>          
         </section>
 
-        <section>
-            <div class="d-flex rounded-4 shadow-0 m-2 mt-3">
-                <div class="text-center pt-3">
-                    <img src="./img/like-1.svg"><br>
-                    <span class="badge text-bg-warning text-white m-2">+350đ</span>
+        <section class="container">
+            <div class="d-flex rounded-4 shadow-0 p-2">
+                <div class="text-center">
+                    <img src="./img/like-1.svg" class="img-fluid"><br>
+                    <p class="badge text-bg-warning text-white m-2">+350đ</p>
                 </div>
-                <div class="lh-0 pt-3 pe-4 flex-grow-1">
-                    <span class="m-2">
-                        <p class="fw-semibold">Like bài viết</p>
-                        <p class="text-secondary fs-7">Thành Dũng vừa cập nhật</p>
-                    </span>
-                    <div class="d-flex h-50 mt-1">
-                        <div class="progress-bar w-100 h-25">
-                            <div class="progress w-25 bg-success "></div>
-                        </div>                        
-                        <p class="ms-2 fs-7">25%</p>
+                <div class="flex-grow-1">
+                    <p class="fw-semibold mb-0">Like bài viết</p>
+                    <p class="text-secondary mb-0 fs-7">Thành Dũng vừa cập nhật</p>
+                    <div class="d-flex gap-2">
+                        <div class="progress-bar bg-light">
+                            <div class="progress w-25 bg-success"></div>
+                        </div>
+                        <p class="fs-7 text-muted mt-1">25%</p>
                     </div>
                 </div>
             </div>
 
-            <div class="d-flex rounded-4 shadow-0 m-2">
-                <div class="text-center pt-3">
-                    <img src="./img/Share.svg"><br>
+            <div class="d-flex rounded-4 shadow-0 p-2 mt-2">
+                <div class="text-center">
+                    <img src="./img/Share.svg" class="img-fluid"><br>
                     <span class="badge text-bg-warning text-white m-2">+500đ</span>
                 </div>
-                <div class="lh-0 pt-3 pe-4 flex-grow-1">
-                    <span class="m-2">
-                        <p class="fw-semibold">Share bài viết</p>
-                        <p class="text-secondary fs-7">Thành Dũng vừa cập nhật</p>
-                    </span>
-                    <div class="d-flex h-50 mt-1">
-                        <div class="progress-bar w-100 h-25">
+                <div class="flex-grow-1">
+                    <p class="fw-semibold mb-0">Share bài viết</p>
+                    <p class="text-secondary mb-0 fs-7">Thành Dũng vừa cập nhật</p>
+                    <div class="d-flex gap-2">
+                        <div class="progress-bar bg-light">
                             <div class="progress bg-success w-50"></div>
                         </div>
-                        <p class="ms-2 fs-7">50%</p>
+                        <p class="fs-7 text-muted mt-1">50%</p>
                     </div>
                 </div>
             </div>
         </section>
-    
-        <section class="mt-4">
+
+        <section class="container">
             <h5>Quảng cáo</h5>
             <img src="./img/banner1.svg" alt="Quảng cáo banner" class="img-fluid w-100">
         </section>
 
-        <section>
-            <div class="my-2 mt-4">
-                <div class="d-flex">
-                    <h5>Việc giá thấp</h5>
-                    <p class="ms-auto">Xem thêm</p>
-                </div>
-                <div class="d-flex overflow-auto">
-                    <img src="./img/tintuc1.svg" alt="" class="w-100">
-                    <img src="./img/tintuc1.svg" alt="" class="w-100">
-                </div>
+        <section class="container">
+            <div class="d-flex">
+                <h5>Việc giá thấp</h5>
+                <p class="ms-auto">Xem thêm</p>
+            </div>
+            <div class="d-flex overflow-auto">
+                <img src="./img/tintuc1.svg" alt="" class="img-fluid w-100">
+                <img src="./img/tintuc1.svg" alt="" class="img-fluid w-100">
             </div>
         </section>
     </main>
 
-    <nav class="nav bg-light fixed-bottom d-flex justify-content-around">
-        <button class="nav-link">
-            <a href="https://nhantsl.github.io/level1/home.html">
-                <i class="bi bi-house-door-fill fs-5"></i><br>
-                <p class="fs-7">Home</p>
+    <nav class="navbar navbar-light bg-light fixed-bottom">
+        <div class="container d-flex justify-content-around">
+            <a class="nav-link text-center" href="https://nhantsl.github.io/level1/home.html">
+                <i class="bi bi-house-door-fill fs-5"></i>
+                <p class="fs-7 m-0">Home</p>
             </a>
-        </button>
-        <button class="nav-link active">
-            <a href="https://nhantsl.github.io/level1/wallet.html">
-                <i class="bi bi-wallet-fill fs-5"></i><br>
-                <p class="fs-7">Kiếm tiền</p>
+            <a class="nav-link active text-center" href="https://nhantsl.github.io/level1/wallet.html">
+                <i class="bi bi-wallet-fill fs-5"></i>
+                <p class="fs-7 m-0">Kiếm tiền</p>
             </a>
-        </button>
-        <button class="nav-link">
-            <a href="https://nhantsl.github.io/level1/people.html">
-                <i class="bi bi-people-fill fs-5"></i><br>
-                <p class="fs-7">Cộng đồng</p>
+            <a class="nav-link text-center" href="https://nhantsl.github.io/level1/people.html">
+                <i class="bi bi-people-fill fs-5"></i>
+                <p class="fs-7 m-0">Cộng đồng</p>
             </a>
-        </button>
-        <button class="nav-link">
-            <a href="https://nhantsl.github.io/level1/profile.html">
-                <i class="bi bi-person-fill fs-5"></i><br>
-                <p class="fs-7">Cá nhân</p>
+            <a class="nav-link text-center" href="https://nhantsl.github.io/level1/profile.html">
+                <i class="bi bi-person-fill fs-5"></i>
+                <p class="fs-7 m-0">Cá Nhân</p>
             </a>
-        </button>
+        </div>
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./script.js" defer></script>
 </body>
 
 </html>

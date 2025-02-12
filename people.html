@@ -12,24 +12,24 @@
 </head>
 
 <body>
-    <header class="people__header bg">
-        <i class="bi bi-arrow-left-short fs-1 mt-2"></i>
+    <header class="people__header">
+        <i class="bi bi-arrow-left-short fs-1"></i>
         <h5 class="m-auto pe-5">Chi tiết</h5>
     </header>
-    <main>
+    <main class="container">
         <section>
             <div class="d-flex justify-content-between">
-                <h4 class="color fw-bold">Like bài viết</h4>
+                <h3 class="color fw-bold">Like bài viết</h3>
                 <img src="./img/More Square.svg" alt="">
             </div>
-            <div class="d-flex">
-                <div class="lh-1">
-                    <p class="text-secondary">Ngày hết hạn</p>
-                    <i class="bi bi-calendar3 text-secondary"></i> 20/09/2020
+            <div class="row">
+                <div class="col">
+                    <p class="text-secondary mb-1">Ngày hết hạn</p>
+                    <i class="bi bi-calendar3 text-secondary"></i> <b>20/09/2020</b>
                 </div>
-                <div class="ms-5 lh-1">
-                    <p class="text-secondary">Còn lại</p>
-                    <p>321</p>
+                <div class="col">
+                    <p class="text-secondary mb-1">Còn lại</p>
+                    <b>321</b>
                 </div>
             </div>
         </section>
@@ -40,48 +40,47 @@
                     <p>Tiền cộng</p>
                 </div>
                 <div class="ms-3">
-                    <div class="badge bg-primary">Facebook</div><br>
-                    <div class="badge bg-info mt-3">+500</div>
+                    <p class="badge bg-primary">Facebook</p><br>
+                    <p class="badge bg-info">+500</p>
                 </div>
             </div>
         </section>
         <section>
-            <div class="lh-1">
-                <h5>Mô tả:</h5>
-                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid
-                    doloribus </p>
-            </div>
+            <h5>Mô tả:</h5>
+            <p class="text-secondary lh-1">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Odit aliquiddoloribus </p>
         </section>
         <section>
             <h5>Làm việc</h5>
-            <div class="square d-grid gap-3 pt-3">
-                <div class="box shadow-0 rounded-3">
+            <div class="row justify-content-around mt-3">
+                <div class="box col-5 col-md-4 shadow-0">
                     <img src="./img/Facebook.svg" alt="">
                     <p>Facebook</p>
-                    <div class="badge bg-warning">Mở app</div>
+                    <p class="badge bg-warning">Mở app</p>
                 </div>
-                <div class="box shadow-0 rounded-3">
+                <div class="box col-5 col-md-4 shadow-0">
                     <img src="./img/chrome.svg" alt="">
                     <p>Trình duyệt</p>
-                    <div class="badge bg-warning">Mở Trình đuyệt</div>
+                    <p class="badge bg-warning">Mở Trình đuyệt</p>
                 </div>
             </div>
         </section>
 
         <section class="people__popup">
-            <div class="d-flex bg-success bg-opacity-75 rounded-4 lh-0">
+            <div class="d-flex bg-success bg-opacity-75 rounded-4 gap-2 p-1">
                 <div>
-                    <img src="./img/like.svg" alt="" class="m-2">
+                    <img src="./img/like.svg" alt="" class="ms-2 pt-2">
                 </div>
-                <div class="mt-3">
-                    <p>Hoàn thành công việc</p>
-                    <p>Nhận tiền sau khi thực hiện</p>
+                <div class="pt-1">
+                    <p class="mb-0">Hoàn thành công việc</p>
+                    <p class="mb-0">Nhận tiền sau khi thực hiện</p>
                 </div>
             </div>
-        </section>
+        </section>    
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 
 </html>
